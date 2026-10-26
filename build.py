@@ -156,6 +156,20 @@ FOOTER = """</main>
 </html>
 """
 
+def _tie_em(mm):
+    inner = mm.group(1)
+    # keep the first two highlighted words together so a short lead word never sits alone
+    inner = re.sub(r"^(\S+) ", r"\1&nbsp;", inner, count=1)
+    return "<em>" + inner + "</em>"
+
+def headline_typography(mm):
+    """Headline hygiene: no line breaks at hyphens inside words, and no stranded first word in a highlight."""
+    tag, attrs, inner = mm.group(1), mm.group(2), mm.group(3)
+    inner = "".join(part if part.startswith("<") else re.sub(r"\b[A-Za-z]+(?:-[A-Za-z]+)+\b", lambda w: w.group(0).replace("-", "\u2011") if len(w.group(0)) <= 12 else w.group(0), part)
+                    for part in re.split(r"(<[^>]+>)", inner))
+    inner = re.sub(r"<em>(.*?)</em>", _tie_em, inner, flags=re.S)
+    return "<%s%s>%s</%s>" % (tag, attrs, inner, tag)
+
 def build():
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -172,6 +186,7 @@ def build():
                     meta[k.strip()] = v.strip()
             text = text[m.end():]
         text = re.sub(r"\{\{i:(\w+)(?::(\d+))?\}\}", lambda mm: icon(mm.group(1), int(mm.group(2) or 18)), text)
+        text = re.sub(r"<(h[12])([^>]*)>(.*?)</\1>", headline_typography, text, flags=re.S)
         html = HEAD.format(title=meta.get("title", "Nomni"), desc=meta.get("desc", "")) \
             + header(meta.get("nav", "")) + text.strip() + "\n" + FOOTER
         (OUT / page.name).write_text(html, encoding="utf-8")
