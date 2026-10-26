@@ -620,3 +620,22 @@ details p { color: var(--ink-2); margin: 0 0 24px; max-width: 720px; }
 @media (max-width: 700px) { .grid-4 > .wide { grid-column: auto; } }
 .mini { color: var(--ink); }
 .dark-tile .mini .mono { color: var(--muted); }
+
+/* ---- Customers & news ---- */
+.namewall { display: flex; flex-wrap: wrap; gap: 10px; }
+.namewall span { font-size: clamp(18px, 2vw, 26px); font-weight: 500; letter-spacing: -0.03em; padding: 12px 22px; border-radius: 999px; border: 1px solid rgba(226,255,230,.14); color: rgba(255,255,255,.88); background: rgba(255,255,255,.03); transition: background .25s, color .25s; }
+.namewall span:hover { background: var(--spring); color: var(--seaweed-deep); }
+.news-feat { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; border-radius: var(--r-xl); overflow: hidden; background: #fff; border: 1px solid var(--line); text-decoration: none; transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.news-feat:hover, .news-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); }
+.news-art { background: radial-gradient(60% 80% at 30% 100%, rgba(143,219,106,.45), transparent 70%), var(--seaweed-deep); min-height: 320px; display: grid; place-items: center; }
+.news-body { padding: 44px; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+.news-body h3, .news-card h3 { font-size: 26px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.15; margin: 10px 0 10px; }
+.news-body p, .news-card p { color: var(--muted); margin-bottom: 18px; }
+.news-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); padding: 28px; text-decoration: none; display: flex; flex-direction: column; transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.news-card h3 { font-size: 21px; }
+.news-card .text-link { margin-top: auto; width: max-content; }
+.k { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--fern); }
+@media (max-width: 1080px) { .news-feat { grid-template-columns: 1fr; } .news-art { min-height: 220px; } }
+@media (max-width: 700px) { .news-body { padding: 26px; } }
+
+.tile.short { min-height: 240px; }
