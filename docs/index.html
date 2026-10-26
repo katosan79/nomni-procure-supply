@@ -11,6 +11,7 @@
 <meta property="og:description" content="Procure and Supply connect restaurants and suppliers. AI agents handle orders, invoices and margins, and you approve.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230E3727'/%3E%3Ctext x='7' y='22' font-family='Arial' font-weight='700' font-size='17' fill='white'%3En%3C/text%3E%3Ccircle cx='24' cy='20' r='3' fill='%238FDB6A'/%3E%3C/svg%3E">
 <link rel="preload" href="assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -56,72 +57,26 @@
   <div class="region-note" hidden>AU and MY versions are coming. You're viewing the Singapore site.</div>
 </header>
 <main>
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-top">
+<section class="mhero">
+  <div class="wrap mhero-grid">
+    <div>
       <a class="eyebrow-chip rv" href="ai.html"><b>New</b> Meet the agents behind Procure &amp; Supply →</a>
-      <h1 class="rv" style="--d:.05s">Your back of house, <br>run by agents. <span class="accent">Approved by you.</span></h1>
-      <p class="lead rv" style="--d:.12s">Procure and Supply connect restaurants and their suppliers. Orders, invoices and margins move on their own, and you sign off.</p>
+      <h1 class="rv" style="--d:.05s">Less paperwork. <em>More kitchen.</em></h1>
+      <p class="lead rv" style="--d:.12s">Procure and Supply connect restaurants and their suppliers. Agents handle the orders, invoices and price checks, and you sign off.</p>
       <div class="btn-row rv" style="--d:.18s">
-        <a class="btn" href="procure.html">I run a restaurant <span class="arr"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn" href="procure.html">I run a kitchen <span class="arr"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         <a class="btn btn-light" href="supply.html">I'm a supplier <span class="arr"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </div>
       <p class="hero-meta rv" style="--d:.24s">Running 10+ outlets? <a href="groups.html">See Procure for groups</a></p>
     </div>
-
-    <div class="scene rv" style="--d:.3s" data-seq="1000" aria-label="Illustration: the Procure invoice queue, a supplier's WhatsApp order and agent notifications">
-      <div class="app" aria-hidden="true">
-        <aside class="app-side">
-          <div class="brandline">nomni <small>Procure</small></div>
-          <div class="ws"><i>D</i>Demo Bistro · Outlet A</div>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 12 4l8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg> Home</a>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h2l2 10h10l2-7H7.2"/><circle cx="10" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg> Orders</a>
-          <a class="on"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg> Invoices <span class="n">3</span></a>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg> Inventory</a>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/><path d="M9 8h6"/></svg> Recipes</a>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V4M4 20h16"/><path d="m7 15 4-4 3 3 5-6"/></svg> Reports</a>
-          <div class="sep">Agents</div>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg> Activity</a>
-          <a><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2c2.8.3 5 2.7 5 5.8"/></svg> Approvals</a>
-        </aside>
-        <div class="app-main">
-          <div class="app-top"><h4>Invoices</h4><div class="search">⌕&nbsp; Search suppliers, invoices…</div><div class="av"></div></div>
-          <div class="kpis">
-            <div class="kpi"><span>To review</span><b>3</b><em>exceptions only</em></div>
-            <div class="kpi"><span>Posted this week</span><b>128</b><em>auto-matched</em></div>
-            <div class="kpi"><span>Arrived by PEPPOL</span><b>41%</b><em>no OCR needed</em></div>
-            <div class="kpi"><span>Synced to</span><b style="font-size:17px;padding-top:4px">Xero</b><em>2 min ago</em></div>
-          </div>
-          <div class="tabs"><span class="on">All</span><span>Needs review</span><span>Posted</span><span>Credit notes</span></div>
-          <div class="tbl">
-            <div class="tr"><span>Supplier</span><span>Source</span><span>Lines</span><span>Status</span><span style="text-align:right">Amount</span></div>
-            <div class="tr hl"><span class="sup"><i style="background:#2B7A4B">F</i>Fresh Produce Co.</span><span class="src">Photo</span><span>13</span><span class="st warn">1 price check</span><span class="amt">S$ 842.60</span></div>
-            <div class="tr"><span class="sup"><i style="background:#0E3727">D</i>Dairy Supplier</span><span class="src pp">PEPPOL</span><span>6</span><span class="st">Posted</span><span class="amt">S$ 316.20</span></div>
-            <div class="tr"><span class="sup"><i style="background:#3D6B8F">S</i>Seafood Supplier</span><span class="src">Email</span><span>9</span><span class="st">Posted</span><span class="amt">S$ 1,204.00</span></div>
-            <div class="tr"><span class="sup"><i style="background:#8A6A3B">G</i>Dry Goods Supplier</span><span class="src pp">PEPPOL</span><span>21</span><span class="st">Posted</span><span class="amt">S$ 653.75</span></div>
-            <div class="tr"><span class="sup"><i style="background:#6B4F8A">M</i>Meat Supplier</span><span class="src">PDF</span><span>4</span><span class="st wait">Awaiting delivery</span><span class="amt">S$ 498.00</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="phone" aria-hidden="true">
-        <div class="phone-in">
-          <div class="wa-head"><i>DB</i><div><b>Demo Bistro</b><span>WhatsApp · to your supplier</span></div></div>
-          <div class="wa-body">
-            <div class="msg" data-at="1">Morning! For tmr pls send 2 ctn eggs, 5kg chicken thigh, 1 box romaine<time>07:42</time></div>
-            <div class="msg" data-at="2"><div class="voice"><span class="pl"></span><span class="wv"></span><span style="font-size:11px">0:06</span></div><time>07:43</time></div>
-            <div class="msg me card" data-at="4"><div class="ch">Order drafted <span>AI inbox</span></div><ul><li>Eggs, grade A <b>2 ctn</b></li><li>Chicken thigh <b>5 kg</b></li><li>Romaine lettuce <b>1 box</b></li><li>Oat milk 1L <b>12 btl</b></li></ul><time>07:44</time></div>
-            <div class="msg me" data-at="5">Confirmed for tomorrow ✓ It's in your Procure too.<time>07:45</time></div>
-          </div>
-          <div class="wa-input">Message</div>
-        </div>
-      </div>
-
-      <div class="toast t1" data-at="3"><span class="ti"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span><div><span class="tt">Invoice Agent</span><b>12 of 13 lines matched to PO and delivery</b><span>Posted to Xero. 1 price change held for you.</span></div></div>
-      <div class="toast t2" data-at="6"><span class="ti"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span><div><span class="tt">Procure · PO created</span><b>Order from WhatsApp is now a PO</b><span>The PEPPOL invoice will match on delivery.</span></div></div>
-      <div class="scene-floor"></div>
+    <div class="mstage rv" style="--d:.2s" aria-label="Illustration: a café owner restocking, with a supplier order, a voice note and a price alert">
+      <div class="shot"><img src="assets/img/cafe.webp" alt="A barista restocking the pastry counter of a shophouse café before opening" decoding="async"></div>
+      <div class="ptag" aria-hidden="true">Kai lan S$3.20/kg<small>Fresh Produce Co. · today</small></div>
+      <div class="vnote" aria-hidden="true"><span class="pl"></span><span class="wv"><u style="height:40%"></u><u style="height:80%"></u><u style="height:55%"></u><u style="height:100%"></u><u style="height:45%"></u><u style="height:72%"></u><u style="height:35%"></u><u style="height:85%"></u></span><q>Same as last week, add 2 tray egg</q></div>
+      <div class="ocard" aria-hidden="true"><div class="t"><span>PO-20871</span><span>Sent 06:02</span></div><b>Fresh Produce Co.</b><span class="muted">14 lines · drop 07:30</span><div class="tot"><span>Total</span><span>S$ 412.60</span></div></div>
+      <div class="sticker" aria-hidden="true">Tomatoes up 18%<small>Margin Agent</small></div>
+      <p class="mstage-cap">Illustrative · some agents are coming soon</p>
     </div>
-    <p class="scene-cap">Product UI shown is illustrative · the AI order inbox and some agents are coming soon</p>
   </div>
 </section>
 
@@ -138,8 +93,29 @@
 <section>
   <div class="wrap">
     <span class="label rv">From mess to system</span>
-    <p class="statement rv">Orders arrive on WhatsApp. <span class="dim">Invoices arrive as photos.</span> <span class="dim">Prices change without warning.</span> <span class="dim">Stock goes missing between outlets.</span> <span class="dim">Procure and Supply turn all of it into one system, and agents keep it moving.</span></p>
-    <div class="band rv"><div class="ph ph-band"><img src="assets/img/mess.webp" alt="A crumpled supplier invoice and a phone on a stainless steel prep bench beside a crate of greens" loading="lazy" decoding="async"></div><div class="toast in band-toast"><span class="ti"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></span><div><span class="tt">Invoice Agent</span><b>Photo invoice read and matched</b><span>12 of 13 lines posted · 1 price change held</span></div></div></div>
+    <p class="statement rv">Orders arrive on WhatsApp. <span class="dim">Invoices arrive as photos.</span> <span class="dim">Prices change without warning.</span> <span class="dim">Procure and Supply turn all of it into one system, and agents keep it moving.</span></p>
+    <div class="paper rv" style="margin-top:56px">
+      <div class="paper-doc">
+        <img src="assets/img/mess.webp" alt="A crumpled supplier invoice and a phone on a stainless steel prep bench beside a crate of greens" loading="lazy" decoding="async">
+        <svg class="mk" viewBox="0 0 600 520" preserveAspectRatio="none" aria-hidden="true"><rect class="hl" x="232" y="300" width="170" height="18" rx="3"/><ellipse class="ring" cx="300" cy="352" rx="120" ry="40" transform="rotate(-8 300 352)"/><path class="tick" d="M470 120 l22 26 l46 -60"/></svg>
+        <div class="mnote" style="left:6%;bottom:8%"><b>Qty billed 12, received 10</b>Held for you. Credit note requested.</div>
+      </div>
+      <div class="paper-rec">
+        <span class="label" style="margin:0">Invoice Agent · paper to posted</span>
+        <h3>A crumpled photo in. A matched invoice out.</h3>
+        <p>Snap it, forward it or let PEPPOL bring it. Every line is checked against your order and what arrived. Clean ones post to your books, and only the odd line out waits for you.</p>
+        <div class="receipt" aria-label="Matched invoice summary">
+          <div class="hd">MATCHED · INV 77064</div>
+          <div class="row ok"><span>Kai lan 5kg</span><span>16.00</span></div>
+          <div class="row ok"><span>Eggs 30s ×2 tray</span><span>18.40</span></div>
+          <div class="row bad"><span>Cherry tom ×12</span><span>54.00</span></div>
+          <div class="row fix"><span>Cherry tom ×10</span><span>45.00</span></div>
+          <div class="ft"><span>To post</span><span>S$ 79.40</span></div>
+        </div>
+        <div class="paper-steps"><span class="on">Read</span><span class="on">Matched</span><span class="held">1 line held</span><span>Posted to Xero</span></div>
+        <p class="small muted" style="margin:0">Illustrative. Invoice Agent status TBC.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -200,41 +176,49 @@
       <div><span class="label rv">Procure</span><h2 class="rv">Everything after the order, <em>handled.</em></h2></div>
       <p class="lead rv">Ordering, receiving, invoices, inventory and recipe costs in one app, with your books kept current.</p>
     </div>
-    <div class="bento">
-      <div class="tile t-4 rv">
-        <span class="num">01 · Invoices</span><h3>Snap it, forward it, or let PEPPOL bring it.</h3><p>Every invoice is matched to its PO and delivery. Clean ones post themselves.</p>
-        <div class="viz">
-          <div class="mini">
-            <div class="mini-row"><b>Chicken thigh, boneless</b><span class="mono">5 kg</span><span class="badge">PO ✓ GRN ✓</span></div>
-            <div class="mini-row"><b>Eggs, grade A</b><span class="mono">2 ctn</span><span class="badge">PO ✓ GRN ✓</span></div>
-            <div class="mini-row"><b>Romaine lettuce</b><span class="mono">1 box</span><span class="badge warn">Price +12%</span></div>
-          </div>
+    <div class="mbands">
+      <div class="mband">
+        <div class="mb-photo rv">
+          <div class="ph-frame"><img src="assets/img/kiosk.webp" alt="Cooks tossing woks at a busy mall food kiosk while a staff member checks orders on a tablet" loading="lazy" decoding="async"></div>
+          <div class="ocard"><div class="t"><span>Tomorrow · Outlet A</span><span>3 suppliers</span></div><b>Order to par</b><div class="ln"><span>Jasmine rice 25kg</span><em>2 bag</em></div><div class="ln"><span>Chicken thigh</span><em>12 kg</em></div><div class="ln"><span>Kraft bowls 750ml</span><em>4 ctn</em></div></div>
+        </div>
+        <div class="rv" style="--d:.06s">
+          <span class="label">Ordering</span>
+          <h2>Order to par, <em>from any supplier.</em></h2>
+          <p class="lead">Set par levels per outlet, repeat favourites and send to suppliers on Nomni or off it. Orders to Supply suppliers land straight in their book.</p>
+          <a class="text-link" href="procure.html">How ordering works →</a>
         </div>
       </div>
-      <div class="tile t-2 dark-tile rv" style="--d:.06s">
-        <span class="num">02 · Recipe margin</span><h3>See what every dish really costs.</h3><p>Recipe costs update from live invoice prices.</p>
-        <div class="viz" style="display:flex;justify-content:center"><div class="donut dk"><span>68%<small>margin</small></span></div></div>
+      <div class="mband rev">
+        <div class="mb-photo rv">
+          <div class="ph-frame"><img src="assets/img/pass.webp" alt="A head chef calling orders at a busy kitchen pass" loading="lazy" decoding="async"></div>
+          <div class="sticker">Chicken rice margin 61%<small>below 65% target</small></div>
+          <div class="ptag">Chicken thigh S$9.80/kg<small>up 9% this week</small></div>
+        </div>
+        <div class="rv" style="--d:.06s">
+          <span class="label">Recipe margin</span>
+          <h2>Know what every dish <em>really costs.</em></h2>
+          <p class="lead">Recipe costs update from live invoice prices and map to your POS. When a supplier raises a price, you see which dishes slip, before month end.</p>
+          <p style="margin-top:16px"><span class="pill pill-soon">Margin Agent · coming soon</span></p>
+        </div>
       </div>
-      <div class="tile t-2 rv">
-        <span class="num">03 · Ordering</span><h3>Order to par, from any supplier.</h3><p>On Nomni or off it.</p>
-        <div class="viz"><div class="bars"><div style="height:62%"></div><div class="on par" style="height:88%"></div><div style="height:40%"></div><div class="on" style="height:74%"></div><div style="height:55%"></div><div class="on" style="height:92%"></div></div><div class="bars-legend"><span>Par level</span></div></div>
+      <div class="mband">
+        <div class="mb-photo rv">
+          <div class="ph-frame wide"><img src="assets/img/ck.webp" alt="Central kitchen staff packing labelled crates for each outlet" loading="lazy" decoding="async"></div>
+          <div class="ptag">Dairy list v14<small>pushed to 53 outlets</small></div>
+        </div>
+        <div class="rv" style="--d:.06s">
+          <span class="label">Central kitchens &amp; HQ</span>
+          <h2>Set it once. <em>Every outlet follows.</em></h2>
+          <p class="lead">Run your central kitchen like a supplier, with slips that become invoices. Lock market lists, recipes and POS mappings at HQ and push them to every brand or region.</p>
+          <p style="margin-top:16px"><a class="text-link" href="central-kitchens.html" style="margin:0 18px 0 0">Central kitchens →</a><a class="text-link" href="groups.html" style="margin:0">Procure for groups →</a></p>
+        </div>
       </div>
-      <div class="tile t-2 mint-tile rv" style="--d:.06s">
-        <span class="num">04 · Accounting</span><h3>Your books, already done.</h3><p>Xero, QuickBooks Online and AutoCount. SQL Accounting next.</p>
-        <div class="viz"><div class="sync-stack"><div class="sync"><span class="node k">Procure</span><span class="wire"></span><span class="node">Xero</span></div><div class="sync"><span class="node k">Procure</span><span class="wire"></span><span class="node">QuickBooks</span></div><div class="sync"><span class="node k">Procure</span><span class="wire"></span><span class="node">AutoCount</span></div></div></div>
-      </div>
-      <div class="tile t-2 rv" style="--d:.12s">
-        <span class="num">05 · Inventory</span><h3>Know what's on the shelf.</h3><p>Counts, waste and transfers between outlets.</p>
-        <div class="viz"><div class="mini"><div class="mini-row"><b>Stock value</b><span class="mono">today</span></div><div class="mini-row"><span>Counted</span><span class="badge">186 / 190</span></div><div class="mini-row"><span>Waste logged</span><span class="badge warn">4 items</span></div></div></div>
-      </div>
-      <div class="tile t-3 rv" id="ck">
-        <span class="num">06 · Central kitchen</span><h3>Run your central kitchen like a supplier.</h3><p>Picking slips become invoices, and pre-fill each outlet's goods received.</p>
-        <div class="viz"><div class="mini"><div class="mini-row"><b>Outlet A</b><span class="mono">14 lines</span><span class="badge">Packed</span></div><div class="mini-row"><b>Outlet B</b><span class="mono">9 lines</span><span class="badge dark">Invoiced</span></div><div class="mini-row"><b>Outlet C</b><span class="mono">21 lines</span><span class="badge warn">Picking</span></div></div></div>
-      </div>
-      <div class="tile t-3 dark-tile rv" style="--d:.06s">
-        <span class="num">07 · HQ</span><h3>Set it once at HQ. Every outlet follows.</h3><p>Lock market lists, recipes and POS mappings, then push them to every brand or region. <span class="pill pill-rolling" style="vertical-align:middle;margin-left:4px">Rolling out</span></p>
-        <div class="viz"><div class="outlets"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="wait"></i><i class="wait"></i><i class="wait"></i><i class="wait"></i></div><div class="outlets-key"><span class="ok">Applied</span><span class="run">Applying</span><span class="wait">Awaiting approval</span></div></div>
-      </div>
+    </div>
+    <div class="extras">
+      <a class="rv" href="integrations.html"><span class="k">Accounting</span><h3>Your books, already done.</h3><p>Xero, QuickBooks Online and AutoCount. SQL Accounting next.</p></a>
+      <a class="rv" style="--d:.06s" href="procure.html"><span class="k">Inventory</span><h3>Know what's on the shelf.</h3><p>Counts, waste and transfers between outlets.</p></a>
+      <a class="rv" style="--d:.12s" href="peppol.html"><span class="k">E-invoicing</span><h3>InvoiceNow-ready.</h3><p>PEPPOL invoices arrive already matched to the order and delivery.</p></a>
     </div>
   </div>
 </section>
@@ -282,6 +266,7 @@
 <section style="padding-top:0">
   <div class="wrap">
     <div class="cta rv">
+      <div class="sticker mango cta-sticker" aria-hidden="true">Free for 14 days<small>no sales call</small></div>
       <span class="label">Get started</span>
       <h2>Give your back office <em>its evenings back.</em></h2>
       <p>Start Procure free for 14 days, or open your store on Supply. No sales call needed.</p>
@@ -289,7 +274,7 @@
         <a href="contact.html#trial"><span><b>I run a restaurant</b><span>Start a 14-day free trial</span></span><i>→</i></a>
         <a href="contact.html#supplier"><span><b>I'm a supplier</b><span>Open your store on Supply</span></span><i>→</i></a>
       </div>
-      <p style="margin:28px auto 0;font-size:15px">Running a group? <a href="contact.html#demo" style="color:#fff">Talk to someone who's run one →</a></p>
+      <p style="margin:28px auto 0;font-size:15px">Running a group? <a href="contact.html#demo" style="color:var(--seaweed);font-weight:600">Talk to someone who's run one →</a></p>
     </div>
   </div>
 </section>
