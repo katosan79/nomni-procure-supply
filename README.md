@@ -1,6 +1,6 @@
 # Procure & Supply website (staging)
 
-Staging build of the new Procure and Supply site. It replaces zeemart.co and uses the Nomni Design System v1.6.0 colours and fonts.
+Staging build of the new Procure and Supply site. It replaces zeemart.co and uses the Nomni Design System v1.6.0 colours and fonts. The fonts (Hanken Grotesk and IBM Plex Mono) are self-hosted in `src/assets/fonts/`.
 
 - The **live staging site** is served by GitHub Pages from the `docs/` folder on `main`.
 - **Copy and sitemap:** see the "Procure & Supply website rebuild — sitemap and copy" doc in the Zeemart 2.0 Claude project.
