@@ -23,6 +23,13 @@
   if (burger) burger.addEventListener('click', function () {
     var open = header.classList.toggle('menu-open');
     burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    if (open) {
+      var links = document.querySelector('.nav-links');
+      var top = header.querySelector('.nav').getBoundingClientRect().bottom + 10;
+      links.style.setProperty('--menu-max', Math.max(240, window.innerHeight - top - 16) + 'px');
+      links.scrollTop = 0;
+    }
   });
 
   // Region (staging: SG only)
