@@ -1,29 +1,21 @@
 <!-- title: Supply · B2B ordering, e-invoicing and payments for food suppliers | desc: Take orders from WhatsApp, voice notes, email or Procure in one order book. Invoice over PEPPOL and get paid on your terms. | nav: supply -->
 
-<section class="phero">
-  <div class="wrap phero-grid">
+<section class="mhero">
+  <div class="wrap mhero-grid">
     <div>
       <span class="label rv">Supply · for suppliers and distributors</span>
-      <h1 class="rv" style="--d:.05s">Take orders however <em>your customers send them.</em></h1>
+      <h1 class="rv" style="--d:.05s">Voice note at 6am? <em>Still a clean order.</em></h1>
       <p class="lead rv" style="--d:.1s">WhatsApp, voice notes, email or Procure all land in one order book. Invoice over PEPPOL and get paid on your terms.</p>
-      <div class="btn-row rv" style="--d:.15s"><a class="btn" href="contact.html#supplier">Start free <span class="arr">{{i:arrow:13}}</span></a><a class="btn btn-ghost" href="#inbox">Join the AI inbox beta</a></div>
+      <div class="btn-row rv" style="--d:.15s"><a class="btn" href="contact.html#supplier">Start free <span class="arr">{{i:arrow:13}}</span></a><a class="btn btn-light" href="#inbox">Join the AI inbox beta</a></div>
       <p class="hero-meta rv" style="--d:.2s">Self-serve signup · No app for your customers to download</p>
     </div>
-    <div class="phero-visual phone-stage rv" style="--d:.15s;height:600px">
-      <div class="ph ph-phone-bg"><img src="assets/img/van.webp" alt="A driver loading crates of vegetables into a refrigerated van at dawn" loading="lazy" decoding="async"></div>
-      <div class="phone" data-seq="1000" style="position:absolute;left:50%;transform:translateX(-50%);top:0;right:auto;height:560px">
-        <div class="phone-in">
-          <div class="wa-head"><i>DB</i><div><b>Demo Bistro</b><span>WhatsApp · your business number</span></div></div>
-          <div class="wa-body">
-            <div class="msg" data-at="1">Boss tmr same as usual but chicken make it 8kg ah<time>21:14</time></div>
-            <div class="msg" data-at="2"><div class="voice"><span class="pl"></span><span class="wv"></span><span style="font-size:11px">0:09</span></div><time>21:16</time></div>
-            <div class="msg me card" data-at="3"><div class="ch">Draft · 6 lines <span>AI inbox</span></div><ul><li>Usual order <b>5 lines</b></li><li>Chicken thigh <b>8 kg</b></li><li>Shallots, peeled <b>2 kg</b></li><li>Credit check <b>OK</b></li></ul><time>21:16</time></div>
-            <div class="msg me" data-at="4">Got it ✓ 6 items for Thursday. Tap to view and pay.<time>21:17</time></div>
-          </div>
-          <div class="wa-input">Message</div>
-        </div>
-      </div>
-      <span class="pill pill-soon" style="position:absolute;left:0;bottom:24px;background:#fff">AI inbox · coming soon</span>
+    <div class="mstage rv" style="--d:.2s" aria-label="Illustration: a driver loading a van, with a customer's voice note turned into a drafted order">
+      <div class="shot"><img src="assets/img/van.webp" alt="A driver loading crates of vegetables into a refrigerated van at dawn" decoding="async"></div>
+      <div class="ptag" aria-hidden="true">Chicken thigh S$9.80/kg<small>Demo Bistro's price</small></div>
+      <div class="vnote" aria-hidden="true"><span class="pl"></span><span class="wv"><u style="height:45%"></u><u style="height:85%"></u><u style="height:60%"></u><u style="height:100%"></u><u style="height:40%"></u><u style="height:70%"></u><u style="height:30%"></u><u style="height:80%"></u></span><q>Boss tmr same as usual, chicken make it 8kg ah</q></div>
+      <div class="ocard" aria-hidden="true"><div class="t"><span>Draft · AI inbox</span><span>06:04</span></div><b>Demo Bistro</b><div class="ln"><span>Usual order</span><em>5 lines</em></div><div class="ln"><span>Chicken thigh</span><em>8 kg</em></div><div class="ln"><span>Credit check</span><em>OK</em></div><div class="tot"><span>Approve</span><span>Thu drop</span></div></div>
+      <div class="sticker mango" aria-hidden="true">AI inbox<small>coming soon</small></div>
+      <p class="mstage-cap">Illustrative · AI order inbox is in development</p>
     </div>
   </div>
 </section>
@@ -57,13 +49,35 @@
       <div><span class="label rv">Your B2B store and back office</span><h2 class="rv">Everything after the order, <em>handled.</em></h2></div>
       <p class="lead rv">Orders, pricing, credit and e-invoicing are live today. Open your store yourself, no sales call needed.</p>
     </div>
-    <div class="bento">
-      <div class="tile t-4 rv"><span class="num">Orders from Procure · Live</span><h3>Restaurants order straight into your book.</h3><p>Orders from Procure buyers arrive ready to pick. No retyping.</p>
-        <div class="viz"><div class="mini"><div class="mini-row"><b>Demo Bistro · Outlet A</b><span class="mono">14 lines · Thu</span><span class="badge">New</span></div><div class="mini-row"><b>Demo Café</b><span class="mono">6 lines · Thu</span><span class="badge">Confirmed</span></div><div class="mini-row"><b>Demo Kitchen</b><span class="mono">22 lines · Fri</span><span class="badge dark">Picking</span></div></div></div></div>
-      <div class="tile t-2 dark-tile rv" style="--d:.06s"><span class="num">E-invoicing · Live</span><h3>Invoice once. It lands in their books.</h3><p>Digital and PEPPOL invoices go straight into the buyer's Procure queue.</p><div class="viz"><div class="sync"><span class="node" style="color:var(--seaweed)">Supply</span><span class="wire" style="background:repeating-linear-gradient(90deg,var(--spring) 0 6px,transparent 6px 10px);background-size:20px 2px"></span><span class="node" style="color:var(--seaweed)">Procure</span></div></div></div>
-      <div class="tile t-2 rv"><span class="num">Pricing · Live</span><h3>Your prices, per customer.</h3><p>Catalogue, market lists and customer-specific pricing.</p><div class="viz"><div class="mini"><div class="mini-row"><b>Chicken thigh / kg</b></div><div class="mini-row"><span>Demo Bistro</span><span class="mono">S$ 9.80</span></div><div class="mini-row"><span>Demo Café</span><span class="mono">S$ 10.20</span></div></div></div></div>
-      <div class="tile t-2 mint-tile rv" style="--d:.06s"><span class="num">Credit · Live</span><h3>Credit limits per customer.</h3><p>Set a limit for each restaurant you supply.</p><div class="viz"><div style="height:10px;border-radius:999px;background:#fff;overflow:hidden;border:1px solid var(--line)"><div style="width:72%;height:100%;background:var(--seaweed)"></div></div><p class="mono" style="font-size:11px;margin-top:8px">S$ 3,600 of S$ 5,000 used · illustrative</p></div></div>
-      <div class="tile t-2 rv" style="--d:.12s"><span class="num">Onboarding · Live</span><h3>Open your store today.</h3><p>Sign up, load your catalogue and invite customers. No sales call needed.</p><div class="viz"><div class="mini"><div class="mini-row"><span>Sign up</span><span class="badge">✓</span></div><div class="mini-row"><span>Load catalogue</span><span class="badge">✓</span></div><div class="mini-row"><span>Invite customers</span><span class="badge warn">Next</span></div></div></div></div>
+    <div class="mbands">
+      <div class="mband">
+        <div class="mb-photo rv">
+          <div class="ph-frame"><img src="assets/img/ck.webp" alt="Warehouse staff packing labelled crates for each customer" loading="lazy" decoding="async"></div>
+          <div class="ocard"><div class="t"><span>Order book · Thu</span><span>3 new</span></div><b>Ready to pick</b><div class="ln"><span>Demo Bistro · Outlet A</span><em>14 lines</em></div><div class="ln"><span>Demo Café</span><em>6 lines</em></div><div class="ln"><span>Demo Kitchen</span><em>22 lines</em></div></div>
+        </div>
+        <div class="rv" style="--d:.06s">
+          <span class="label">Orders · live</span>
+          <h2>Restaurants order <em>straight into your book.</em></h2>
+          <p class="lead">Orders from Procure buyers arrive ready to pick, with no retyping. Invoice once, and it lands in their books as a digital or PEPPOL invoice.</p>
+        </div>
+      </div>
+      <div class="mband rev">
+        <div class="mb-photo rv">
+          <div class="ph-frame"><img src="assets/img/coldroom.webp" alt="A produce distributor recording a voice message in his cold room" loading="lazy" decoding="async"></div>
+          <div class="ptag">Demo Café S$10.20/kg<small>customer price list</small></div>
+          <div class="sticker seaweed">Credit 72% used<small>S$3,600 of 5,000</small></div>
+        </div>
+        <div class="rv" style="--d:.06s">
+          <span class="label">Pricing &amp; credit · live</span>
+          <h2>Your prices, <em>per customer.</em></h2>
+          <p class="lead">Keep one catalogue with market lists and customer-specific prices. Set a credit limit for every restaurant you supply.</p>
+        </div>
+      </div>
+    </div>
+    <div class="extras">
+      <a class="rv" href="peppol.html"><span class="k">E-invoicing · live</span><h3>Invoice once.</h3><p>Digital and PEPPOL invoices go straight into the buyer's Procure queue.</p></a>
+      <a class="rv" style="--d:.06s" href="contact.html#supplier"><span class="k">Onboarding · live</span><h3>Open your store today.</h3><p>Sign up, load your catalogue and invite customers. No sales call needed.</p></a>
+      <a class="rv" style="--d:.12s" href="payments.html"><span class="k">Payments · soon</span><h3>Get paid on terms.</h3><p>Collect on the due date with PayNow and eGIRO in Singapore.</p></a>
     </div>
   </div>
 </section>
