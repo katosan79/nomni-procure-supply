@@ -710,11 +710,18 @@ details p { color: var(--ink-2); margin: 0 0 24px; max-width: 720px; }
   --display: "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
 }
 h1, h2, .statement, .stat .big, .cta h2 { font-family: var(--display); font-weight: 800; }
-h1 { letter-spacing: -0.055em; line-height: .95; }
-h2 { letter-spacing: -0.045em; line-height: 1; }
+h1 { letter-spacing: -0.055em; line-height: 1; text-wrap: balance; }
+h2 { letter-spacing: -0.045em; line-height: 1.02; text-wrap: balance; }
 h3 { font-family: var(--display); font-weight: 700; letter-spacing: -0.025em; }
-h1 em, h2 em, .hero h1 .accent { font-style: normal; font-weight: inherit; color: var(--spring); background: var(--seaweed); padding: 0 .12em .03em; border-radius: .12em; -webkit-box-decoration-break: clone; box-decoration-break: clone; letter-spacing: inherit; }
-.dark h1 em, .dark h2 em { background: var(--spring); color: var(--seaweed); }
+/* Highlight: a precise band, not a padded box.
+   Bricolage content area = 1.2em (asc .93 / desc .27); cap top sits at .27em.
+   The band runs .20em -> 1.16em of the content area (cap top minus .07, descender plus .03),
+   so at line-height 1 stacked lines keep a clean .04em gap. Clone decoration pads every line
+   fragment so tight-tracked glyph overhangs never spill past the band; the small left hang
+   leaves the word space visible. */
+h1 em, h2 em, .hero h1 .accent { --hl: var(--seaweed); font-style: normal; font-weight: inherit; letter-spacing: inherit; color: var(--spring); background: linear-gradient(var(--hl), var(--hl)) 0 .2em / 100% .96em no-repeat; padding: 0 .07em 0 .05em; margin: 0 -.07em 0 -.03em; border-radius: .1em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.dark h1 em, .dark h2 em { --hl: var(--spring); color: var(--seaweed); }
+.mhero .label::before, .cta .label::before { background: var(--seaweed); }
 .statement { font-weight: 700; letter-spacing: -0.045em; line-height: 1.04; }
 .stat .big { font-weight: 800; }
 .label::before { content: ""; width: 9px; height: 9px; border-radius: 2px; background: var(--spring); opacity: 1; transform: rotate(45deg); }
@@ -751,7 +758,7 @@ h1 em, h2 em, .hero h1 .accent { font-style: normal; font-weight: inherit; color
 /* CTA becomes a Spring field with one oversized button */
 .cta { background: var(--spring); color: var(--seaweed); border-radius: 32px; }
 .cta::before { display: none; }
-.cta h2 { font-size: clamp(46px, 7.4vw, 108px); line-height: .9; letter-spacing: -0.055em; }
+.cta h2 { font-size: clamp(46px, 7.4vw, 108px); line-height: 1; letter-spacing: -0.055em; }
 .cta h2 em { background: var(--seaweed); color: var(--spring); }
 .cta p { color: rgba(14,55,39,.8); }
 .cta .label { color: var(--seaweed); }
@@ -906,3 +913,45 @@ h1 em, h2 em, .hero h1 .accent { font-style: normal; font-weight: inherit; color
   .mk .ring, .mk .tick { stroke-dashoffset: 0; }
   .mk .hl { transform: none; }
 }
+
+/* ---------- Market Day: page variants (26 Oct, round 2) ---------- */
+.mhero.long h1 { font-size: clamp(44px, 5.4vw, 82px); }
+.mhero.solo { padding-bottom: 180px; position: relative; }
+.mhero.solo h1 { max-width: 15ch; }
+.mhero.solo .lead { max-width: 560px; }
+.solo-deco { position: absolute; right: max(28px, calc((100vw - var(--max)) / 2 + 40px)); top: 160px; display: flex; flex-direction: column; align-items: flex-end; gap: 28px; }
+.solo-deco .ptag { transform: rotate(-6deg); font-size: 30px; padding: 16px 26px 16px 40px; }
+.solo-deco .ptag small { font-size: 13px; }
+.solo-deco .sticker { width: 150px; margin-right: 60px; transform: rotate(12deg); font-size: 22px; }
+.prices.lift { margin-top: -110px; position: relative; z-index: 2; }
+.price { border: 2px solid var(--seaweed); border-radius: 26px; }
+.price h3 { font-family: var(--display); font-weight: 800; font-size: 30px; letter-spacing: -0.04em; }
+.price .amt { font-family: var(--display); font-weight: 800; font-size: 60px; letter-spacing: -0.055em; }
+.price .note { color: var(--chilli); }
+.wlog { position: absolute; left: 0; bottom: 6px; z-index: 3; width: 340px; background: var(--seaweed); color: #fff; border-radius: 20px; padding: 16px 18px; font-family: var(--mono); font-size: 12.5px; box-shadow: 0 30px 60px -24px rgba(14,55,39,.7); transform: rotate(-1.5deg); }
+.wl-h { display: flex; justify-content: space-between; color: rgba(226,255,230,.6); margin-bottom: 8px; font-size: 11.5px; }
+.wl-h b { font-weight: 500; color: var(--spring); display: inline-flex; align-items: center; gap: 7px; }
+.wl-h b::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--spring); box-shadow: 0 0 0 3px rgba(143,219,106,.25); animation: pulse 2s infinite; }
+.wl-r { display: grid; grid-template-columns: 46px 1fr; gap: 8px; padding: 7px 0; border-top: 1px dashed rgba(226,255,230,.16); line-height: 1.4; }
+.wl-r time { color: var(--mango); }
+.wl-r i { font-style: normal; display: inline-block; background: rgba(143,219,106,.16); color: var(--spring); border-radius: 4px; padding: 0 5px; margin-right: 6px; font-size: 11px; }
+.wl-r.hl { background: linear-gradient(90deg, rgba(143,219,106,.14), transparent); margin: 0 -8px; padding-left: 8px; padding-right: 8px; border-radius: 6px; }
+.wl-f { margin-top: 8px; padding-top: 9px; border-top: 1px solid rgba(226,255,230,.2); color: var(--mango); font-weight: 500; }
+@media (max-width: 1080px) {
+  .solo-deco { position: static; flex-direction: row; align-items: center; margin-top: 40px; }
+  .solo-deco .sticker { margin-right: 0; }
+  .mhero.solo { padding-bottom: 150px; }
+}
+@media (max-width: 700px) {
+  .wlog { width: 280px; font-size: 11.5px; padding: 14px; }
+  .solo-deco { gap: 18px; flex-wrap: wrap; }
+  .solo-deco .ptag { font-size: 22px; padding: 12px 18px 12px 32px; }
+  .solo-deco .sticker { width: 112px; font-size: 16px; }
+  .prices.lift { margin-top: -90px; }
+  .price .amt { font-size: 48px; }
+}
+.mstage .sticker.tl { right: auto; left: -8px; top: 24px; }
+
+/* Sticker hygiene: sub-line stays on one line; main line balanced */
+.sticker { text-wrap: balance; }
+.sticker small { white-space: nowrap; }
