@@ -1,28 +1,20 @@
 <!-- title: Procure · Restaurant purchasing, invoices and inventory with AI agents | desc: Order from any supplier, capture invoices by photo, PDF, email or PEPPOL, and know what every dish costs. Free for 14 days. | nav: procure -->
 
-<section class="phero">
-  <div class="wrap phero-grid">
+<section class="mhero">
+  <div class="wrap mhero-grid">
     <div>
       <span class="label rv">Procure · for restaurants</span>
-      <h1 class="rv" style="--d:.05s">Order, receive and reconcile. <em>Without the paperwork.</em></h1>
-      <p class="lead rv" style="--d:.1s">Procure handles purchasing, invoices, inventory and recipe costs for cafés, restaurants and central kitchens. Its agents do the routine work.</p>
-      <div class="btn-row rv" style="--d:.15s"><a class="btn" href="contact.html#trial">Start free for 14 days <span class="arr">{{i:arrow:13}}</span></a><a class="btn btn-ghost" href="contact.html#demo">Book a demo</a></div>
+      <h1 class="rv" style="--d:.05s">Your 11pm invoice pile, <em>sorted by morning.</em></h1>
+      <p class="lead rv" style="--d:.1s">Procure handles ordering, invoices, inventory and recipe costs for cafés, restaurants and central kitchens. Its agents do the routine work, and you approve.</p>
+      <div class="btn-row rv" style="--d:.15s"><a class="btn" href="contact.html#trial">Start free for 14 days <span class="arr">{{i:arrow:13}}</span></a><a class="btn btn-light" href="contact.html#demo">Book a demo</a></div>
       <p class="hero-meta rv" style="--d:.2s">Full access for 14 days · Xero, QuickBooks Online and AutoCount</p>
     </div>
-    <div class="phero-visual photo-stage rv" style="--d:.15s">
-      <div class="ph ph-tall"><img src="assets/img/receiving.webp" alt="A chef checking a morning delivery on her phone at a restaurant back door" loading="lazy" decoding="async"></div>
-      <div class="over">
-      <div class="panel" data-seq="900">
-        <div class="panel-h"><span>Invoice INV-20418 · Fresh Produce Co.</span><span class="src">Photo</span></div>
-        <div class="panel-b">
-          <div class="line-item" data-at="1"><span><b>Chicken thigh, boneless</b><small>5 kg · S$ 9.80/kg</small></span><span class="q">PO ✓</span><span class="badge">GRN ✓</span></div>
-          <div class="line-item" data-at="2"><span><b>Eggs, grade A</b><small>2 ctn · S$ 48.00/ctn</small></span><span class="q">PO ✓</span><span class="badge">GRN ✓</span></div>
-          <div class="line-item" data-at="3"><span><b>Basil, Thai</b><small>1 kg · S$ 14.00/kg</small></span><span class="q">PO ✓</span><span class="badge">GRN ✓</span></div>
-          <div class="line-item" data-at="4"><span><b>Romaine lettuce</b><small>1 box · price up vs PO</small></span><span class="q">PO ✓</span><span class="badge warn">+12%</span></div>
-        </div>
-      </div>
-      <div class="toast" data-at="5" style="position:relative;margin:-26px 0 0 auto;width:330px;max-width:calc(100% - 16px);opacity:1;transform:none"><span class="ti">{{i:check:17}}</span><div><span class="tt">Posted to Xero</span><b>3 lines posted, 1 held for review</b><span>Illustrative · Invoice Agent status TBC</span></div></div>
-      </div>
+    <div class="mstage rv" style="--d:.2s" aria-label="Illustration: a chef checking a delivery, with a matched invoice and a price alert">
+      <div class="shot"><img src="assets/img/receiving.webp" alt="A chef checking a morning delivery on her phone at a restaurant back door" decoding="async"></div>
+      <div class="ptag" aria-hidden="true">Chicken thigh S$9.80/kg<small>matches PO</small></div>
+      <div class="ocard" aria-hidden="true"><div class="t"><span>INV-20418 · photo</span><span>06:48</span></div><b>Fresh Produce Co.</b><div class="ln"><span>Chicken thigh 5kg</span><em>PO ✓ GRN ✓</em></div><div class="ln"><span>Eggs, grade A 2 ctn</span><em>PO ✓ GRN ✓</em></div><div class="ln warn"><span>Romaine 1 box</span><em>+12% held</em></div><div class="tot"><span>3 posted to Xero</span><span>1 for you</span></div></div>
+      <div class="sticker" aria-hidden="true">Romaine up 12%<small>held for review</small></div>
+      <p class="mstage-cap">Illustrative · Invoice Agent status TBC</p>
     </div>
   </div>
 </section>
@@ -61,12 +53,22 @@
         <p class="lead rv">Check deliveries in at the door, including short deliveries. Procure matches each invoice to the PO and delivery, posts the clean ones and queues the rest.</p>
         <ul class="ticks rv"><li>Photo, PDF, email and PEPPOL</li><li>3-way match, auto-post and exception queue</li><li>Gmail and Google Drive inbox <span class="pill pill-soon">Soon</span></li></ul>
       </div>
-      <div class="stage dark-stage rv">
-        <div class="kpis" style="grid-template-columns:1fr 1fr;margin:0">
-          <div class="kpi"><span>Sources</span><b style="font-size:18px">4</b><em>photo · pdf · email · peppol</em></div>
-          <div class="kpi"><span>Match</span><b style="font-size:18px">3-way</b><em>PO · GRN · invoice</em></div>
-          <div class="kpi"><span>Clean invoices</span><b style="font-size:18px">Auto-post</b><em>to your accounting</em></div>
-          <div class="kpi"><span>Exceptions</span><b style="font-size:18px">Queued</b><em>price · qty · duplicate</em></div>
+      <div class="paper stack rv">
+        <div class="paper-doc">
+          <img src="assets/img/mess.webp" alt="A crumpled supplier invoice and a phone on a prep bench" loading="lazy" decoding="async">
+          <svg class="mk" viewBox="0 0 600 340" preserveAspectRatio="none" aria-hidden="true"><rect class="hl" x="232" y="196" width="170" height="14" rx="3"/><ellipse class="ring" cx="300" cy="232" rx="120" ry="28" transform="rotate(-8 300 232)"/><path class="tick" d="M470 80 l20 22 l40 -50"/></svg>
+          <div class="mnote" style="right:5%;bottom:8%"><b>Qty billed 12, received 10</b>Held for you</div>
+        </div>
+        <div class="paper-rec">
+          <div class="receipt" aria-label="Matched invoice summary">
+            <div class="hd">MATCHED · INV-20418</div>
+            <div class="row ok"><span>Chicken thigh 5kg</span><span>49.00</span></div>
+            <div class="row ok"><span>Eggs, grade A ×2 ctn</span><span>96.00</span></div>
+            <div class="row bad"><span>Cherry tom ×12</span><span>54.00</span></div>
+            <div class="row fix"><span>Cherry tom ×10</span><span>45.00</span></div>
+            <div class="ft"><span>To post</span><span>S$ 190.00</span></div>
+          </div>
+          <div class="paper-steps"><span class="on">Read</span><span class="on">3-way matched</span><span class="held">1 line held</span><span>Posted</span></div>
         </div>
       </div>
     </div>
