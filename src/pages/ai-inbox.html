@@ -1,0 +1,83 @@
+<!-- title: AI order inbox · Supply by Nomni | desc: Turn WhatsApp messages, voice notes and photos into clean orders on your own business number. Join the Supply AI order inbox beta. | nav: supply -->
+
+<section class="phero">
+  <div class="wrap phero-grid">
+    <div>
+      <span class="label rv">Supply · AI order inbox · beta soon</span>
+      <h1 class="rv" style="--d:.05s">Your customers already order on WhatsApp. <em>Now the orders enter themselves.</em></h1>
+      <p class="lead rv" style="--d:.1s">The AI order inbox reads texts, voice notes and photos, matches each item to your catalogue and drafts the order. You approve it in one tap.</p>
+      <div class="btn-row rv" style="--d:.15s"><a class="btn" href="#beta">Join the beta <span class="arr">{{i:arrow:13}}</span></a><a class="btn btn-ghost" href="supply.html">About Supply</a></div>
+    </div>
+    <div class="phero-visual rv" style="--d:.15s;height:560px">
+      <div class="phone" data-seq="1000" style="position:absolute;left:50%;transform:translateX(-50%);top:0;right:auto;height:560px">
+        <div class="phone-in">
+          <div class="wa-head"><i>DC</i><div><b>Demo Café</b><span>WhatsApp · your business number</span></div></div>
+          <div class="wa-body">
+            <div class="msg" data-at="1">📷 Photo · fridge shelf<time>06:58</time></div>
+            <div class="msg" data-at="2">need these tmr, milk 2 more than usual<time>06:58</time></div>
+            <div class="msg me card" data-at="3"><div class="ch">Draft · 4 lines <span>AI inbox</span></div><ul><li>Full cream milk 2L <b>14 btl</b></li><li>Oat milk 1L <b>12 btl</b></li><li>Greek yoghurt 1kg <b>4 tub</b></li><li>Butter, salted <b>2 kg</b></li></ul><time>06:59</time></div>
+            <div class="msg me" data-at="4">Confirmed for tomorrow ✓<time>07:01</time></div>
+          </div>
+          <div class="wa-input">Message</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div><span class="label rv">How it works</span><h2 class="rv">Four steps, <em>no new app for your customers.</em></h2></div>
+      <p class="lead rv">Your customers keep messaging the number they already use. Your team reviews drafts instead of typing orders.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card rv"><div class="top"><span class="ico">{{i:chat:20}}</span><span class="mono small muted">01</span></div><h3>Message arrives</h3><p>Text, voice note, photo or email, on your own WhatsApp number.</p></div>
+      <div class="card rv" style="--d:.05s"><div class="top"><span class="ico">{{i:spark:20}}</span><span class="mono small muted">02</span></div><h3>AI drafts the order</h3><p>Items are matched to your catalogue and that customer's usual order, Singlish included.</p></div>
+      <div class="card rv" style="--d:.1s"><div class="top"><span class="ico">{{i:eye:20}}</span><span class="mono small muted">03</span></div><h3>You review</h3><p>Split-screen: the message on one side, the draft on the other. Fix a line in one tap.</p></div>
+      <div class="card rv" style="--d:.15s"><div class="top"><span class="ico">{{i:check:20}}</span><span class="mono small muted">04</span></div><h3>Confirmed in the chat</h3><p>The customer gets a confirmation. Procure buyers get a PO automatically.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="label rv">Why Supply</span><h2 class="rv">More than order entry. <em>The whole order-to-cash loop.</em></h2></div>
+      <p class="lead rv">Every order the inbox drafts flows into the rest of Supply.</p>
+    </div>
+    <div class="bento">
+      <div class="tile t-2 dark-tile rv" style="background:rgba(255,255,255,.04);border:1px solid rgba(226,255,230,.1);min-height:0"><span class="num">Per-customer autopilot</span><h3>Trusted customers, zero touch.</h3><p>Turn on auto-confirm customer by customer once matching is accurate.</p></div>
+      <div class="tile t-2 dark-tile rv" style="--d:.06s;background:rgba(255,255,255,.04);border:1px solid rgba(226,255,230,.1);min-height:0"><span class="num">Procure link</span><h3>A PO on the buyer's side.</h3><p>When your customer uses Procure, the order becomes their PO, and your invoice matches it on delivery.</p></div>
+      <div class="tile t-2 dark-tile rv" style="--d:.12s;background:rgba(255,255,255,.04);border:1px solid rgba(226,255,230,.1);min-height:0"><span class="num">Credit and invoicing</span><h3>Credit checked, PEPPOL invoiced.</h3><p>Drafts respect each customer's credit limit, and invoices go out over PEPPOL.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="beta">
+  <div class="wrap grid-2" style="align-items:center;gap:64px">
+    <div>
+      <span class="label rv">Beta</span>
+      <h2 class="rv">Join the <em>AI order inbox beta.</em></h2>
+      <p class="lead rv">We're starting with suppliers who take a large share of orders on WhatsApp. Tell us a little about how you take orders today.</p>
+    </div>
+    <form class="form panel rv" data-staging style="padding:32px">
+      <div class="field"><label for="b-name">Company</label><input id="b-name" name="company" required></div>
+      <div class="field"><label for="b-email">Work email</label><input id="b-email" type="email" name="email" required></div>
+      <div class="field"><label for="b-share">Share of orders that arrive on WhatsApp</label><select id="b-share" name="share"><option>Under 25%</option><option>25–50%</option><option>50–75%</option><option>Over 75%</option></select></div>
+      <div class="field"><label for="b-erp">Accounting or ERP</label><select id="b-erp"><option>AutoCount</option><option>SQL Account</option><option>Xero</option><option>Other</option><option>None</option></select></div>
+      <button class="btn" type="submit">Request a beta spot <span class="arr">{{i:arrow:13}}</span></button>
+      <p class="form-note">Staging form · submissions aren't sent yet</p>
+    </form>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap faq">
+    <h2 class="rv" style="margin-bottom:32px">Questions</h2>
+    <details><summary>Do my customers need to download anything?</summary><p>No. They keep messaging your existing WhatsApp number.</p></details>
+    <details><summary>Does it understand voice notes and Singlish?</summary><p>That's what it's being built for. Voice notes are transcribed and matched to your catalogue, including local phrasing. We'll test it on real orders with beta suppliers before launch.</p></details>
+    <details><summary>Will anything be sent without my approval?</summary><p>No. Every draft waits for your approval until you choose to turn on autopilot for a specific customer.</p></details>
+    <details><summary>Which systems will confirmed orders flow into?</summary><p>Supply first. Pushing orders into AutoCount, SQL Account and Xero is planned.</p></details>
+  </div>
+</section>

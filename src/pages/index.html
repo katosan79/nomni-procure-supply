@@ -1,168 +1,238 @@
-<!-- title: Procure & Supply by Nomni | AI agents for restaurant purchasing and supplier orders | desc: Procure and Supply connect restaurants and suppliers. AI agents handle orders, invoices and margins, and you approve. | nav: home -->
+<!-- title: Procure & Supply by Nomni · AI agents for restaurant purchasing and supplier orders | desc: Procure and Supply connect restaurants and suppliers. AI agents handle orders, invoices and margins, and you approve. | nav: home -->
 
 <section class="hero">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <span class="eyebrow">Procure &amp; Supply by Nomni</span>
-        <h1>Your back of house, run by agents. <em>Approved by you.</em></h1>
+    <div class="hero-top">
+      <a class="eyebrow-chip rv" href="ai.html"><b>New</b> Meet the agents behind Procure &amp; Supply →</a>
+      <h1 class="rv" style="--d:.05s">Your back of house, <br>run by agents. <span class="accent">Approved by you.</span></h1>
+      <p class="lead rv" style="--d:.12s">Procure and Supply connect restaurants and their suppliers. Orders, invoices and margins move on their own, and you sign off.</p>
+      <div class="btn-row rv" style="--d:.18s">
+        <a class="btn" href="procure.html">I run a restaurant <span class="arr">{{i:arrow:13}}</span></a>
+        <a class="btn btn-light" href="supply.html">I'm a supplier <span class="arr">{{i:arrow:13}}</span></a>
       </div>
-      <div class="hero-side">
-        <p>Procure and Supply connect restaurants and their suppliers. Orders, invoices and margins move on their own, and you sign off.</p>
-        <div class="hero-paths">
-          <a class="btn btn-spring arrow" href="procure.html">I run a restaurant </a>
-          <a class="btn btn-ghost-light arrow" href="supply.html">I'm a supplier </a>
-        </div>
-        <p class="hero-note">Running 10+ outlets? <a href="groups.html">See Procure for groups</a> or <a href="contact.html#demo">book a demo</a>.</p>
-      </div>
+      <p class="hero-meta rv" style="--d:.24s">Running 10+ outlets? <a href="groups.html">See Procure for groups</a></p>
     </div>
 
-    <div class="hero-stage">
-      <div class="demo" data-demo>
-        <div class="demo-bar"><i></i><i></i><i></i><span class="label">Illustrative demo · Supply AI order inbox <span class="pill pill-soon" style="margin-left:6px">Coming soon</span></span></div>
-        <div class="demo-grid">
-          <div class="panel">
-            <div class="panel-title">WhatsApp · Demo Bistro</div>
-            <div class="chat">
-              <div class="bubble" data-step="1">Morning! For tmr pls send 2 ctn eggs, 5kg chicken thigh, 1 box romaine<time>07:42</time></div>
-              <div class="bubble" data-step="2"><div class="voice"><span class="play"></span><span class="wave"></span><span class="small">0:06</span></div><time>07:43</time></div>
-              <div class="bubble" data-step="3">📷 Photo of empty shelf: oat milk<time>07:43</time></div>
-              <div class="bubble me" data-step="6">Confirmed for tomorrow, 4 items. Your order is also in Procure.<time>07:45</time></div>
-            </div>
+    <div class="scene rv" style="--d:.3s" data-seq="1000" aria-label="Illustration: the Procure invoice queue, a supplier's WhatsApp order and agent notifications">
+      <div class="app" aria-hidden="true">
+        <aside class="app-side">
+          <div class="brandline">nomni <small>Procure</small></div>
+          <div class="ws"><i>D</i>Demo Bistro · Outlet A</div>
+          <a>{{i:home:16}} Home</a>
+          <a>{{i:order:16}} Orders</a>
+          <a class="on">{{i:invoice:16}} Invoices <span class="n">3</span></a>
+          <a>{{i:box:16}} Inventory</a>
+          <a>{{i:recipe:16}} Recipes</a>
+          <a>{{i:chart:16}} Reports</a>
+          <div class="sep">Agents</div>
+          <a>{{i:spark:16}} Activity</a>
+          <a>{{i:users:16}} Approvals</a>
+        </aside>
+        <div class="app-main">
+          <div class="app-top"><h4>Invoices</h4><div class="search">⌕&nbsp; Search suppliers, invoices…</div><div class="av"></div></div>
+          <div class="kpis">
+            <div class="kpi"><span>To review</span><b>3</b><em>exceptions only</em></div>
+            <div class="kpi"><span>Posted this week</span><b>128</b><em>auto-matched</em></div>
+            <div class="kpi"><span>Arrived by PEPPOL</span><b>41%</b><em>no OCR needed</em></div>
+            <div class="kpi"><span>Synced to</span><b style="font-size:17px;padding-top:4px">Xero</b><em>2 min ago</em></div>
           </div>
-          <div class="panel">
-            <div class="panel-title">Draft order <span class="badge">AI matched to your catalogue</span></div>
-            <ul class="order-lines">
-              <li data-step="2"><span>Eggs, grade A<span class="from">from text · "2 ctn eggs"</span></span><span class="qty">2 ctn</span><span class="badge">Matched</span></li>
-              <li data-step="3"><span>Chicken thigh, boneless<span class="from">from text · "5kg chicken thigh"</span></span><span class="qty">5 kg</span><span class="badge">Matched</span></li>
-              <li data-step="4"><span>Romaine lettuce<span class="from">from voice note · "1 box romaine"</span></span><span class="qty">1 box</span><span class="badge">Matched</span></li>
-              <li data-step="4"><span>Oat milk, barista 1L<span class="from">from photo · usual qty for this customer</span></span><span class="qty">12 btl</span><span class="badge badge-warn">Check qty</span></li>
-            </ul>
-            <div class="demo-foot">
-              <div class="flow-steps">
-                <span class="flow-step" data-step="5" data-cls="done">Supplier approves</span>
-                <span class="flow-step" data-step="6" data-cls="done">PO created in Procure</span>
-                <span class="flow-step" data-step="7" data-cls="done">PEPPOL invoice on delivery</span>
-              </div>
-            </div>
+          <div class="tabs"><span class="on">All</span><span>Needs review</span><span>Posted</span><span>Credit notes</span></div>
+          <div class="tbl">
+            <div class="tr"><span>Supplier</span><span>Source</span><span>Lines</span><span>Status</span><span style="text-align:right">Amount</span></div>
+            <div class="tr hl"><span class="sup"><i style="background:#2B7A4B">F</i>Fresh Produce Co.</span><span class="src">Photo</span><span>13</span><span class="st warn">1 price check</span><span class="amt">S$ 842.60</span></div>
+            <div class="tr"><span class="sup"><i style="background:#0E3727">D</i>Dairy Supplier</span><span class="src pp">PEPPOL</span><span>6</span><span class="st">Posted</span><span class="amt">S$ 316.20</span></div>
+            <div class="tr"><span class="sup"><i style="background:#3D6B8F">S</i>Seafood Supplier</span><span class="src">Email</span><span>9</span><span class="st">Posted</span><span class="amt">S$ 1,204.00</span></div>
+            <div class="tr"><span class="sup"><i style="background:#8A6A3B">G</i>Dry Goods Supplier</span><span class="src pp">PEPPOL</span><span>21</span><span class="st">Posted</span><span class="amt">S$ 653.75</span></div>
+            <div class="tr"><span class="sup"><i style="background:#6B4F8A">M</i>Meat Supplier</span><span class="src">PDF</span><span>4</span><span class="st wait">Awaiting delivery</span><span class="amt">S$ 498.00</span></div>
           </div>
         </div>
       </div>
+
+      <div class="phone" aria-hidden="true">
+        <div class="phone-in">
+          <div class="wa-head"><i>DB</i><div><b>Demo Bistro</b><span>WhatsApp · to your supplier</span></div></div>
+          <div class="wa-body">
+            <div class="msg" data-at="1">Morning! For tmr pls send 2 ctn eggs, 5kg chicken thigh, 1 box romaine<time>07:42</time></div>
+            <div class="msg" data-at="2"><div class="voice"><span class="pl"></span><span class="wv"></span><span style="font-size:11px">0:06</span></div><time>07:43</time></div>
+            <div class="msg me card" data-at="4"><div class="ch">Order drafted <span>AI inbox</span></div><ul><li>Eggs, grade A <b>2 ctn</b></li><li>Chicken thigh <b>5 kg</b></li><li>Romaine lettuce <b>1 box</b></li><li>Oat milk 1L <b>12 btl</b></li></ul><time>07:44</time></div>
+            <div class="msg me" data-at="5">Confirmed for tomorrow ✓ It's in your Procure too.<time>07:45</time></div>
+          </div>
+          <div class="wa-input">Message</div>
+        </div>
+      </div>
+
+      <div class="toast t1" data-at="3"><span class="ti">{{i:invoice:17}}</span><div><span class="tt">Invoice Agent</span><b>12 of 13 lines matched to PO and delivery</b><span>Posted to Xero. 1 price change held for you.</span></div></div>
+      <div class="toast t2" data-at="6"><span class="ti">{{i:check:17}}</span><div><span class="tt">Procure · PO created</span><b>Order from WhatsApp is now a PO</b><span>The PEPPOL invoice will match on delivery.</span></div></div>
+      <div class="scene-floor"></div>
     </div>
+    <p class="scene-cap">Product UI shown is illustrative · the AI order inbox and some agents are coming soon</p>
   </div>
 </section>
 
-<div class="strip">
-  <div class="wrap strip-inner">
-    <p class="strip-label">Part of Nomni, trusted by 35,000+ hospitality venues across Asia Pacific. Works with the tools you already use.</p>
-    <div class="chips">
-      <span class="chip">Xero</span><span class="chip">QuickBooks Online</span><span class="chip">AutoCount</span><span class="chip">Nomni POS</span><span class="chip">PEPPOL InvoiceNow</span><span class="chip">SQL Accounting <small>soon</small></span>
+<div class="marquee-wrap">
+  <p class="marquee-title">Part of Nomni, trusted by 35,000+ hospitality venues across Asia Pacific. Works with the tools you already use.</p>
+  <div class="marquee" aria-label="Integrations">
+    <div class="marquee-track">
+      <span class="logo-word">Xero</span><span class="logo-word">QuickBooks Online</span><span class="logo-word">AutoCount</span><span class="logo-word">PEPPOL InvoiceNow</span><span class="logo-word">Nomni POS</span><span class="logo-word">WhatsApp <small>soon</small></span><span class="logo-word">SQL Accounting <small>soon</small></span><span class="logo-word">Gmail <small>soon</small></span><span class="logo-word">Google Drive <small>soon</small></span>
+      <span class="logo-word" aria-hidden="true">Xero</span><span class="logo-word" aria-hidden="true">QuickBooks Online</span><span class="logo-word" aria-hidden="true">AutoCount</span><span class="logo-word" aria-hidden="true">PEPPOL InvoiceNow</span><span class="logo-word" aria-hidden="true">Nomni POS</span><span class="logo-word" aria-hidden="true">WhatsApp <small>soon</small></span><span class="logo-word" aria-hidden="true">SQL Accounting <small>soon</small></span><span class="logo-word" aria-hidden="true">Gmail <small>soon</small></span><span class="logo-word" aria-hidden="true">Google Drive <small>soon</small></span>
     </div>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">One network</span>
-      <h2>When both sides are on Nomni, nothing gets retyped.</h2>
-      <p class="lead">A restaurant orders in Procure, or on WhatsApp. The supplier confirms in Supply. The invoice comes back over PEPPOL, already matched to the order and delivery.</p>
+    <span class="label rv">From mess to system</span>
+    <p class="statement rv">Orders arrive on WhatsApp. <span class="dim">Invoices arrive as photos.</span> <span class="dim">Prices change without warning.</span> <span class="dim">Stock goes missing between outlets.</span> <span class="dim">Procure and Supply turn all of it into one system, and agents keep it moving.</span></p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="label rv">One network</span><h2 class="rv">When both sides are on Nomni, <em>nothing</em> gets retyped.</h2></div>
+      <p class="lead rv">A restaurant orders in Procure or on WhatsApp. The supplier confirms in Supply. The invoice comes back over PEPPOL, already matched to the order and delivery.</p>
     </div>
-    <div class="network reveal">
-      <div class="node">
-        <span class="eyebrow">Restaurant</span>
-        <h3>Procure</h3>
-        <p class="muted">Ordering, receiving, invoices, inventory and recipe costs.</p>
-        <ul><li>Par levels and repeat orders</li><li>3-way match and auto-post</li><li>Live recipe costing</li></ul>
+    <div class="network rv">
+      <div class="net-node">
+        <div class="who"><i>{{i:order:22}}</i><div><span>Restaurants</span><b>Procure</b></div></div>
+        <ul><li>Par levels and repeat orders</li><li>3-way match and auto-post</li><li>Live recipe costing</li><li>HQ control for groups</li></ul>
       </div>
-      <div class="rails">
-        <div class="rail fwd"><span>Order</span></div>
-        <div class="rail rev"><span>PEPPOL invoice</span></div>
-        <div class="rail fwd"><span>Payment <small>(soon)</small></span></div>
+      <div class="net-mid" aria-hidden="true">
+        <div class="net-row fwd"><span class="net-chip">Order <small>to supplier</small></span></div>
+        <div class="net-row rev"><span class="net-chip">PEPPOL invoice <small>matched</small></span></div>
+        <div class="net-row fwd soon"><span class="net-chip">Payment <small>soon</small></span></div>
       </div>
-      <div class="node">
-        <span class="eyebrow">Supplier</span>
-        <h3>Supply</h3>
-        <p class="muted">Your B2B store and back office.</p>
-        <ul><li>Orders from any channel</li><li>Customer pricing and credit limits</li><li>E-invoices into buyers' books</li></ul>
+      <div class="net-node">
+        <div class="who"><i>{{i:store:22}}</i><div><span>Suppliers</span><b>Supply</b></div></div>
+        <ul><li>Orders from any channel</li><li>Customer pricing and credit limits</li><li>E-invoices into buyers' books</li><li>Collect on terms (soon)</li></ul>
       </div>
     </div>
   </div>
 </section>
 
-<section class="bg-seaweed on-dark">
+<section class="dark">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Meet the agents</span>
-      <h2>A back-office team that never clocks off.</h2>
-      <p class="lead">Each agent does one job well. It reads what's coming in, drafts the action, and waits for your approval.</p>
+    <div class="head">
+      <div><span class="label rv">Meet the agents</span><h2 class="rv">A back-office team that <em>never clocks off.</em></h2></div>
+      <p class="lead rv">Each agent does one job. It reads what's coming in, drafts the action and waits for your approval. Pick one to see what it does.</p>
     </div>
-    <div class="grid-3">
-      <div class="card card-dark has-pill reveal"><span class="pill pill-tbc">Status TBC</span><span class="num">Procure</span><h3>Invoice Agent</h3><p>Reads every invoice, matches it to the PO and the delivery, and posts the clean ones.</p></div>
-      <div class="card card-dark has-pill reveal"><span class="pill pill-soon">Coming soon</span><span class="num">Procure</span><h3>Ordering Agent</h3><p>Drafts tomorrow's order from par levels, sales and lead times. You approve.</p></div>
-      <div class="card card-dark has-pill reveal"><span class="pill pill-soon">Coming soon</span><span class="num">Procure</span><h3>Margin Agent</h3><p>Flags a dish as soon as a price rise pushes it below its target margin.</p></div>
-      <div class="card card-dark has-pill reveal"><span class="pill pill-soon">Coming soon</span><span class="num">Procure</span><h3>Variance Agent</h3><p>Explains where stock went: waste, transfers or miscounts.</p></div>
-      <div class="card card-dark has-pill reveal"><span class="pill pill-soon">Coming soon</span><span class="num">Procure · HQ</span><h3>Governance Agent</h3><p>Turns supplier price files into list updates for HQ to approve in bulk.</p></div>
-      <div class="card card-dark has-pill reveal"><span class="pill pill-soon">Coming soon</span><span class="num">Supply</span><h3>AI order inbox</h3><p>Turns WhatsApp messages, voice notes and photos into clean orders.</p></div>
+    <div class="agents">
+      <div class="agent-list rv" role="tablist" aria-label="Agents">
+        <button class="agent-btn" role="tab" aria-selected="false" data-agent="invoice"><span class="ai">{{i:invoice:19}}</span><span><b>Invoice Agent</b><span class="d">Reads, matches and posts every invoice.</span></span><span class="pill pill-tbc">Status TBC</span></button>
+        <button class="agent-btn" role="tab" aria-selected="false" data-agent="ordering"><span class="ai">{{i:order:19}}</span><span><b>Ordering Agent</b><span class="d">Drafts tomorrow's order from par and sales.</span></span><span class="pill pill-soon">Soon</span></button>
+        <button class="agent-btn" role="tab" aria-selected="false" data-agent="margin"><span class="ai">{{i:chart:19}}</span><span><b>Margin Agent</b><span class="d">Flags dishes when prices push them below target.</span></span><span class="pill pill-soon">Soon</span></button>
+        <button class="agent-btn" role="tab" aria-selected="false" data-agent="variance"><span class="ai">{{i:box:19}}</span><span><b>Variance Agent</b><span class="d">Explains where stock went.</span></span><span class="pill pill-soon">Soon</span></button>
+        <button class="agent-btn" role="tab" aria-selected="false" data-agent="governance"><span class="ai">{{i:hq:19}}</span><span><b>Governance Agent</b><span class="d">Turns price files into updates for HQ to approve.</span></span><span class="pill pill-soon">Soon</span></button>
+        <button class="agent-btn" role="tab" aria-selected="false" data-agent="inbox"><span class="ai">{{i:chat:19}}</span><span><b>Supply order inbox</b><span class="d">Turns WhatsApp messages into clean orders.</span></span><span class="pill pill-soon">Soon</span></button>
+      </div>
+      <div class="rv" style="--d:.1s">
+        <div class="console" data-console>
+          <div class="console-top"><span>agent-activity · demo-bistro</span><span class="live">Live</span></div>
+          <ul class="feed" aria-live="polite"></ul>
+          <div class="console-foot"><span>Approve first</span><span>Undo window</span><span>Named actor and reason</span><span>Full audit log</span></div>
+        </div>
+        <p class="cap-dark">Illustrative activity. Agent availability is shown on each card.</p>
+      </div>
     </div>
-    <div class="guardrails"><span>Approve first</span><span>Undo window</span><span>Named actor and reason on every action</span><span>Full audit log</span></div>
-    <div class="btn-row"><a class="btn btn-spring arrow" href="ai.html">How our agents work </a></div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Built for every kitchen</span>
-      <h2>From one café to a hundred outlets.</h2>
+    <div class="head">
+      <div><span class="label rv">Procure</span><h2 class="rv">Everything after the order, <em>handled.</em></h2></div>
+      <p class="lead rv">Ordering, receiving, invoices, inventory and recipe costs in one app, with your books kept current.</p>
     </div>
-    <div class="grid-3">
-      <a class="card card-link reveal" href="procure.html"><span class="num">For restaurants</span><h3>Order, receive and reconcile, without the paperwork.</h3><p>Order from any supplier, snap invoices at the door, and know what every dish costs.</p><span class="more arrow">Explore Procure </span></a>
-      <a class="card card-link reveal" href="groups.html"><span class="num">For groups</span><h3>Set it once at HQ. Every outlet follows.</h3><p>Master lists, recipes and POS mappings, pushed to every outlet with approvals and an audit trail.</p><span class="more arrow">Procure for groups </span></a>
-      <a class="card card-link reveal" href="supply.html"><span class="num">For suppliers</span><h3>Your B2B store, open on WhatsApp.</h3><p>Take orders however customers send them, invoice over PEPPOL, and get paid on terms.</p><span class="more arrow">Explore Supply </span></a>
+    <div class="bento">
+      <div class="tile t-4 rv">
+        <span class="num">01 · Invoices</span><h3>Snap it, forward it, or let PEPPOL bring it.</h3><p>Every invoice is matched to its PO and delivery. Clean ones post themselves.</p>
+        <div class="viz">
+          <div class="mini">
+            <div class="mini-row"><b>Chicken thigh, boneless</b><span class="mono">5 kg</span><span class="badge">PO ✓ GRN ✓</span></div>
+            <div class="mini-row"><b>Eggs, grade A</b><span class="mono">2 ctn</span><span class="badge">PO ✓ GRN ✓</span></div>
+            <div class="mini-row"><b>Romaine lettuce</b><span class="mono">1 box</span><span class="badge warn">Price +12%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="tile t-2 dark-tile rv" style="--d:.06s">
+        <span class="num">02 · Recipe margin</span><h3>See what every dish really costs.</h3><p>Recipe costs update from live invoice prices.</p>
+        <div class="viz" style="display:flex;justify-content:center"><div class="donut dk"><span>68%<small>margin</small></span></div></div>
+      </div>
+      <div class="tile t-2 rv">
+        <span class="num">03 · Ordering</span><h3>Order to par, from any supplier.</h3><p>On Nomni or off it.</p>
+        <div class="viz"><div class="bars"><div style="height:62%"></div><div class="on par" style="height:88%"></div><div style="height:40%"></div><div class="on" style="height:74%"></div><div style="height:55%"></div><div class="on" style="height:92%"></div></div><div class="bars-legend"><span>Par level</span></div></div>
+      </div>
+      <div class="tile t-2 mint-tile rv" style="--d:.06s">
+        <span class="num">04 · Accounting</span><h3>Your books, already done.</h3><p>Xero, QuickBooks Online and AutoCount. SQL Accounting next.</p>
+        <div class="viz"><div class="sync-stack"><div class="sync"><span class="node k">Procure</span><span class="wire"></span><span class="node">Xero</span></div><div class="sync"><span class="node k">Procure</span><span class="wire"></span><span class="node">QuickBooks</span></div><div class="sync"><span class="node k">Procure</span><span class="wire"></span><span class="node">AutoCount</span></div></div></div>
+      </div>
+      <div class="tile t-2 rv" style="--d:.12s">
+        <span class="num">05 · Inventory</span><h3>Know what's on the shelf.</h3><p>Counts, waste and transfers between outlets.</p>
+        <div class="viz"><div class="mini"><div class="mini-row"><b>Stock value</b><span class="mono">today</span></div><div class="mini-row"><span>Counted</span><span class="badge">186 / 190</span></div><div class="mini-row"><span>Waste logged</span><span class="badge warn">4 items</span></div></div></div>
+      </div>
+      <div class="tile t-3 rv" id="ck">
+        <span class="num">06 · Central kitchen</span><h3>Run your central kitchen like a supplier.</h3><p>Picking slips become invoices, and pre-fill each outlet's goods received.</p>
+        <div class="viz"><div class="mini"><div class="mini-row"><b>Outlet A</b><span class="mono">14 lines</span><span class="badge">Packed</span></div><div class="mini-row"><b>Outlet B</b><span class="mono">9 lines</span><span class="badge dark">Invoiced</span></div><div class="mini-row"><b>Outlet C</b><span class="mono">21 lines</span><span class="badge warn">Picking</span></div></div></div>
+      </div>
+      <div class="tile t-3 dark-tile rv" style="--d:.06s">
+        <span class="num">07 · HQ</span><h3>Set it once at HQ. Every outlet follows.</h3><p>Lock market lists, recipes and POS mappings, then push them to every brand or region. <span class="pill pill-rolling" style="vertical-align:middle;margin-left:4px">Rolling out</span></p>
+        <div class="viz"><div class="outlets"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="run"></i><i class="wait"></i><i class="wait"></i><i class="wait"></i><i class="wait"></i></div><div class="outlets-key"><span class="ok">Applied</span><span class="run">Applying</span><span class="wait">Awaiting approval</span></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="bg-paper">
+<section style="padding-top:0">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Results from operators</span>
-      <h2>Less admin, fewer surprises at month end.</h2>
-    </div>
-    <div class="grid-3">
-      <div class="stat reveal"><div class="big">95%</div><p>less ordering work after moving off Excel order sheets.</p><p class="who">TamJai SamGor · Supply chain</p><span class="pill pill-tbc">Permission pending</span></div>
-      <div class="stat reveal"><div class="big">30%</div><p>more productivity from admin and back-office staff with invoice digitisation.</p><p class="who">Better Craft Co. · Managing Director</p><span class="pill pill-tbc">Permission pending</span></div>
-      <div class="stat reveal"><div class="big">150k+</div><p>orders processed on the platform every month.</p><p class="who">Platform figure from zeemart.co</p><span class="pill pill-tbc">Re-verify</span></div>
+    <div class="aud">
+      <a class="rv" href="procure.html"><span class="k">For restaurants</span><h3>Order, receive and reconcile, without the paperwork.</h3><p>Cafés, restaurants, bars and central kitchens. Free for 14 days.</p><span class="go">Explore Procure <i>→</i></span></a>
+      <a class="rv feat" style="--d:.06s" href="groups.html"><span class="k">For groups</span><h3>One master list, pushed to every outlet.</h3><p>Approvals, audit logs and cross-outlet reporting for multi-brand groups.</p><span class="go">Procure for groups <i>→</i></span></a>
+      <a class="rv" style="--d:.12s" href="supply.html"><span class="k">For suppliers</span><h3>Your B2B store, open on WhatsApp.</h3><p>Take orders however customers send them, invoice over PEPPOL and get paid on terms.</p><span class="go">Explore Supply <i>→</i></span></a>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap band">
-    <div class="reveal">
-      <span class="eyebrow">Singapore e-invoicing</span>
-      <h2>InvoiceNow-ready today, on both sides of the invoice.</h2>
-      <p class="lead">Suppliers send PEPPOL invoices from Supply. Restaurants receive them in Procure, already matched to the order and the delivery.</p>
-      <div class="btn-row"><a class="btn btn-primary arrow" href="peppol.html">Learn about PEPPOL </a></div>
+<section style="padding-top:40px">
+  <div class="wrap">
+    <span class="label rv">Results from operators</span>
+    <div class="stats">
+      <div class="stat rv"><div class="big"><span data-count="95">95</span><sup>%</sup></div><p>less ordering work after moving off Excel order sheets.</p><p class="who">TamJai SamGor · Supply chain</p><span class="pill pill-tbc">Permission pending</span></div>
+      <div class="stat rv" style="--d:.06s"><div class="big"><span data-count="30">30</span><sup>%</sup></div><p>more productivity from admin and back-office staff with invoice digitisation.</p><p class="who">Better Craft Co. · Managing Director</p><span class="pill pill-tbc">Permission pending</span></div>
+      <div class="stat rv" style="--d:.12s"><div class="big"><span data-count="150">150</span><sup>k+</sup></div><p>orders processed on the platform every month.</p><p class="who">Platform figure from zeemart.co</p><span class="pill pill-tbc">Re-verify</span></div>
     </div>
-    <ol class="timeline reveal">
-      <li class="now"><b>Since 1 Apr 2026</b>New voluntary GST registrants</li>
-      <li><b>From 1 Apr 2028</b>Existing businesses, phased in by turnover</li>
-      <li><b>By 1 Apr 2031</b>All GST-registered businesses</li>
-    </ol>
   </div>
 </section>
 
-<section class="section-tight">
-  <div class="wrap split-cta">
-    <div class="card bg-seaweed reveal" style="border:0">
-      <div><span class="eyebrow">Restaurants</span><h2 style="color:#fff">Start free for 14 days.</h2><p style="color:rgba(226,255,230,.8)">Set up your suppliers, send your first order and snap your first invoice.</p></div>
-      <div class="btn-row"><a class="btn btn-spring arrow" href="contact.html#trial">Start free trial </a><a class="btn btn-ghost-light" href="contact.html#demo">Book a demo</a></div>
+<section style="padding-top:40px">
+  <div class="wrap">
+    <div class="peppol rv">
+      <div>
+        <span class="label">Singapore e-invoicing</span>
+        <h2>InvoiceNow-ready, on <em>both sides</em> of the invoice.</h2>
+        <p class="lead">Suppliers send PEPPOL invoices from Supply. Restaurants receive them in Procure, already matched to the order and the delivery.</p>
+        <a class="btn" href="peppol.html" style="margin-top:12px">Learn about PEPPOL <span class="arr">{{i:arrow:13}}</span></a>
+      </div>
+      <ol class="tl">
+        <li class="now"><b>1 Apr 2026</b><span>New voluntary GST registrants</span></li>
+        <li><b>1 Apr 2028</b><span>Existing businesses, phased in by turnover</span></li>
+        <li><b>2029 – 2030</b><span>Larger turnover bands follow</span></li>
+        <li><b>1 Apr 2031</b><span>All GST-registered businesses</span></li>
+      </ol>
     </div>
-    <div class="card bg-mint reveal" style="border:0">
-      <div><span class="eyebrow">Suppliers</span><h2>Open your store on Supply.</h2><p>Load your catalogue, invite your customers and join the AI order inbox beta.</p></div>
-      <div class="btn-row"><a class="btn btn-primary arrow" href="contact.html#supplier">Start free </a><a class="btn btn-ghost" href="supply.html#inbox">Join the beta</a></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta rv">
+      <span class="label">Get started</span>
+      <h2>Give your back office <em>its evenings back.</em></h2>
+      <p>Start Procure free for 14 days, or open your store on Supply. No sales call needed.</p>
+      <div class="split">
+        <a href="contact.html#trial"><span><b>I run a restaurant</b><span>Start a 14-day free trial</span></span><i>→</i></a>
+        <a href="contact.html#supplier"><span><b>I'm a supplier</b><span>Open your store on Supply</span></span><i>→</i></a>
+      </div>
+      <p style="margin:28px auto 0;font-size:15px">Running a group? <a href="contact.html#demo" style="color:#fff">Talk to someone who's run one →</a></p>
     </div>
   </div>
 </section>

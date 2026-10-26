@@ -1,36 +1,36 @@
-<!-- title: Start free or book a demo | Procure & Supply by Nomni | desc: Start a 14-day free trial of Procure, open your store on Supply, or book a demo for your group. | nav: contact -->
+<!-- title: Start free or book a demo · Procure & Supply by Nomni | desc: Start a 14-day free trial of Procure, open your store on Supply, or book a demo for your group. | nav: contact -->
 
-<section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow">Get started</span>
-    <h1>Start free, or talk to someone who's run a group.</h1>
-    <p class="lead">Pick the option that fits you. Staging forms aren't connected yet.</p>
+<section class="phero">
+  <div class="wrap head-c">
+    <span class="label rv">Get started</span>
+    <h1 class="rv" style="--d:.05s">Start free, or talk to <em>someone who's run a group.</em></h1>
+    <p class="lead rv" style="--d:.1s">Pick the option that fits you.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap grid-3">
-    <form class="form card" id="trial" data-staging>
-      <span class="num">Restaurants</span><h3>Start your 14-day free trial</h3>
-      <div><label for="t-co">Restaurant name</label><input id="t-co" required></div>
-      <div><label for="t-em">Work email</label><input id="t-em" type="email" required></div>
-      <button class="btn btn-primary" type="submit">Start free trial</button>
-      <p class="form-note">Links to the live self-serve signup at launch.</p>
+<section style="padding-top:0">
+  <div class="wrap prices">
+    <form class="form price rv" id="trial" data-staging>
+      <span class="k">Restaurants</span><h3>Start your 14-day free trial</h3>
+      <div class="field"><label for="t-co">Restaurant name</label><input id="t-co" required></div>
+      <div class="field"><label for="t-em">Work email</label><input id="t-em" type="email" required></div>
+      <button class="btn" type="submit">Start free trial <span class="arr">{{i:arrow:13}}</span></button>
+      <p class="form-note">Links to the live self-serve signup at launch</p>
     </form>
-    <form class="form card" id="supplier" data-staging>
-      <span class="num">Suppliers</span><h3>Open your store on Supply</h3>
-      <div><label for="s-co">Company name</label><input id="s-co" required></div>
-      <div><label for="s-em">Work email</label><input id="s-em" type="email" required></div>
-      <button class="btn btn-primary" type="submit">Start free</button>
-      <p class="form-note">Links to supplier self-onboarding at launch.</p>
+    <form class="form price feat rv" id="demo" data-staging style="--d:.06s">
+      <span class="k">Groups</span><h3>Book a demo</h3>
+      <div class="field"><label for="d-co" style="color:rgba(226,255,230,.75)">Group name</label><input id="d-co" required></div>
+      <div class="field"><label for="d-em" style="color:rgba(226,255,230,.75)">Work email</label><input id="d-em" type="email" required></div>
+      <div class="field"><label for="d-out" style="color:rgba(226,255,230,.75)">Outlets</label><select id="d-out"><option>2–9</option><option>10–49</option><option>50–99</option><option>100+</option></select></div>
+      <button class="btn btn-spring" type="submit">Request a demo <span class="arr">{{i:arrow:13}}</span></button>
+      <p class="form-note" style="color:rgba(226,255,230,.5)">Staging form · submissions aren't sent yet</p>
     </form>
-    <form class="form card" id="demo" data-staging>
-      <span class="num">Groups</span><h3>Book a demo</h3>
-      <div><label for="d-co">Group name</label><input id="d-co" required></div>
-      <div><label for="d-em">Work email</label><input id="d-em" type="email" required></div>
-      <div><label for="d-out">Outlets</label><select id="d-out"><option>2–9</option><option>10–49</option><option>50–99</option><option>100+</option></select></div>
-      <button class="btn btn-primary" type="submit">Request a demo</button>
-      <p class="form-note">Staging form. Submissions aren't sent yet.</p>
+    <form class="form price rv" id="supplier" data-staging style="--d:.12s">
+      <span class="k">Suppliers</span><h3>Open your store on Supply</h3>
+      <div class="field"><label for="s-co">Company name</label><input id="s-co" required></div>
+      <div class="field"><label for="s-em">Work email</label><input id="s-em" type="email" required></div>
+      <button class="btn" type="submit">Start free <span class="arr">{{i:arrow:13}}</span></button>
+      <p class="form-note">Links to supplier self-onboarding at launch</p>
     </form>
   </div>
 </section>
