@@ -407,6 +407,7 @@ section { padding: 140px 0; position: relative; }
 /* ---------- Page hero (inner) ---------- */
 .phero { padding: 96px 0 40px; }
 .phero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; }
+.phero-grid > *, .frow > *, .grid-2 > * { min-width: 0; }
 .phero h1 { font-size: clamp(44px, 6vw, 84px); margin-bottom: 26px; }
 .phero .lead { margin-bottom: 34px; }
 .phero-solo { max-width: 960px; }
@@ -518,9 +519,11 @@ details p { color: var(--ink-2); margin: 0 0 24px; max-width: 720px; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
   .nav-links { display: none; }
-  .burger { display: inline-block; }
+  .burger { display: inline-block; flex: none; }
+  .nav { justify-content: space-between; }
+  .nav-actions { margin-left: auto; }
   .link-quiet, .region, .nav-actions .btn-ghost { display: none; }
-  .menu-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 70px; left: 16px; right: 16px; background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 12px; box-shadow: var(--shadow-2); max-height: calc(100vh - 140px); overflow: auto; }
+  .menu-open .nav-links { display: flex; flex-direction: column; position: absolute; top: 70px; left: 16px; right: 16px; background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 12px; box-shadow: var(--shadow-2); justify-content: flex-start; max-height: var(--menu-max, calc(100dvh - 140px)); overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
   .menu-open .nav-item > button::after { display: none; }
   .menu-open .menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 0 6px; min-width: 0; background: transparent; }
   .scene { height: 560px; }
