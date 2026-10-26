@@ -639,3 +639,55 @@ details p { color: var(--ink-2); margin: 0 0 24px; max-width: 720px; }
 @media (max-width: 700px) { .news-body { padding: 26px; } }
 
 .tile.short { min-height: 240px; }
+
+/* ---- Photography ---- */
+.ph { position: relative; overflow: hidden; border-radius: var(--r-xl); background: var(--cream-3); }
+.ph img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.2s var(--ease); }
+.ph::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(8,37,25,0) 55%, rgba(8,37,25,.28)); mix-blend-mode: multiply; }
+.ph-band { aspect-ratio: 16 / 7; }
+.ph-tall { aspect-ratio: 4 / 5; }
+.ph-wide { aspect-ratio: 16 / 10; }
+.band { position: relative; margin-top: 72px; }
+.band:hover .ph img { transform: scale(1.02); }
+.band-toast { position: absolute; left: 32px; bottom: 32px; width: 340px; opacity: 1; transform: none; }
+.band-cap { position: absolute; left: 40px; bottom: 36px; color: #fff; max-width: 520px; z-index: 2; }
+.band-cap b { display: block; font-size: clamp(24px, 2.6vw, 36px); font-weight: 500; letter-spacing: -0.03em; line-height: 1.1; margin-top: 8px; }
+.band .ph-band::after { background: linear-gradient(180deg, rgba(8,37,25,0) 40%, rgba(8,37,25,.55)); }
+.photo-stage { position: relative; padding-bottom: 80px; }
+.photo-stage .ph-tall { width: 78%; margin-left: auto; }
+.photo-stage.wide .ph-wide { width: 100%; }
+.photo-stage .over { position: absolute; left: 0; bottom: 0; width: 74%; z-index: 2; }
+.photo-stage.wide .over { width: 70%; left: -24px; bottom: -10px; }
+.phone-stage .ph-phone-bg { position: absolute; right: 0; top: 30px; width: 78%; height: 520px; }
+.phone-stage .phone { left: 30% !important; z-index: 2; }
+.aud-img { margin: -30px -30px 22px; height: 210px; overflow: hidden; border-radius: var(--r-xl) var(--r-xl) 0 0; background: var(--cream-3); }
+.aud-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.aud a:hover .aud-img img { transform: scale(1.04); }
+.aud a { min-height: 0; }
+.photo-tile { color: #fff !important; background: var(--seaweed); border: 0; justify-content: flex-end; min-height: 380px; isolation: isolate; }
+.photo-tile.short { min-height: 340px; }
+.photo-tile .tile-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1s var(--ease); }
+.photo-tile::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(8,37,25,.05) 20%, rgba(8,37,25,.82) 100%); }
+.photo-tile:hover .tile-bg { transform: scale(1.04); }
+.photo-tile .num { color: var(--spring) !important; }
+.photo-tile p { color: rgba(255,255,255,.82) !important; }
+.photo-tile .viz { margin-top: 18px; padding-top: 0; }
+.photo-tile .chip { background: rgba(255,255,255,.12) !important; color: #fff !important; border-color: rgba(255,255,255,.2) !important; backdrop-filter: blur(6px); }
+@media (max-width: 1080px) {
+  .photo-stage .ph-tall { width: 100%; }
+  .photo-stage .over, .photo-stage.wide .over { position: relative; width: 100%; left: 0; bottom: 0; margin-top: -60px; padding: 0 16px; }
+  .photo-stage { padding-bottom: 0; }
+  .phone-stage .ph-phone-bg { width: 100%; }
+  .phone-stage .phone { left: 50% !important; }
+}
+@media (max-width: 700px) {
+  .ph-band { aspect-ratio: 4 / 5; }
+  .band-toast { left: 14px; right: 14px; width: auto; bottom: 14px; }
+  .band-cap { left: 22px; right: 22px; bottom: 24px; }
+  .aud-img { height: 180px; }
+  .phone-stage .ph-phone-bg { top: 60px; height: 460px; }
+}
+.photo-tile .num { background: rgba(8,37,25,.6); backdrop-filter: blur(6px); padding: 5px 10px; border-radius: 999px; width: max-content; margin-bottom: 12px; }
+.photo-tile::before { background: linear-gradient(180deg, rgba(8,37,25,0) 10%, rgba(8,37,25,.35) 45%, rgba(8,37,25,.88) 100%); }
+.photo-stage > .scene-cap { position: absolute; right: 0; bottom: -28px; margin: 0 !important; }
+@media (max-width: 1080px) { .photo-stage > .scene-cap { position: static; text-align: left; margin-top: 12px !important; } }
